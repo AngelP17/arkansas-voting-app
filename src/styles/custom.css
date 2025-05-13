@@ -1,0 +1,100 @@
+/* Custom animations for the Arkansas Voting App */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-in-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-in-out;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Custom styling for the chat component */
+.chat-message {
+  position: relative;
+}
+
+.chat-message-bot::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #EFF6FF;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: 0;
+  margin-bottom: -10px;
+}
+
+.chat-message-user::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #F3F4F6;
+  border-bottom: 0;
+  border-right: 0;
+  margin-right: 0;
+  margin-bottom: -10px;
+}
+
+/* Smooth transitions for dark/light mode and language changes */
+.transition-bg {
+  transition: background-color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.transition-color {
+  transition: color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.transition-border {
+  transition: border-color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+.transition-all-custom {
+  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+} 
