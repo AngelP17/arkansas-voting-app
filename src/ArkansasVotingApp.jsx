@@ -342,7 +342,7 @@ const ArkansasVotingApp = () => {
       <div className={`animate-fade-in ${transition}`}>
         {/* Logo and Header */}
         <div className={`flex flex-col items-center ${darkMode ? 'bg-blue-900' : 'bg-blue-700'} text-white p-6 rounded-lg shadow-lg mb-8 transition-bg transition-color ${transition}`}>
-          <img src="/arkansas_voting_logo.png" alt="Arkansas Voting Initiative Logo" className="w-24 h-24 mb-2" />
+          <img src="/arkansas_voting_logo.svg" alt="Arkansas Voting Initiative Logo" className="w-24 h-24 mb-2" />
           <h1 className="text-3xl font-bold mb-2">{t('improvingVoting')}</h1>
           <p className="text-xl mb-2">{t('workingTogether')}</p>
         </div>
@@ -483,7 +483,7 @@ const ArkansasVotingApp = () => {
     return (
       <div className={`animate-fade-in ${transition}`}>
         <div className="flex flex-col items-center mb-6">
-          <img src="/arkansas_voting_logo.png" alt="Arkansas Voting Initiative Logo" className="w-24 h-24 mb-2" />
+          <img src="/arkansas_voting_logo.svg" alt="Arkansas Voting Initiative Logo" className="w-24 h-24 mb-2" />
           <h1 className="text-3xl font-bold mb-2">{t('aboutInitiative')}</h1>
         </div>
         <div className="bg-blue-50 dark:bg-blue-900 p-6 rounded-lg mb-8 transition-bg ${transition}">
